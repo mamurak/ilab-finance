@@ -1,0 +1,85 @@
+version: 3
+domain: Banking and Finance
+created_by:
+seed_examples:
+  - context: |
+      
+    questions_and_answers:
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+  - context: |
+      
+    questions_and_answers:
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+  - context: |
+      
+    questions_and_answers:
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+  - context: |
+      
+    questions_and_answers:
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+  - context: |
+      
+    questions_and_answers:
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+      - question: |
+          
+        answer: |
+          
+document_outline: Details of the Red Hat Bank Core Checking account
+document:
+  repo:
+  commit:
+  patterns:
+    - "source_docs/core_checking.md"

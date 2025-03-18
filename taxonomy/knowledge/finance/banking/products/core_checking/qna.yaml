@@ -1,0 +1,147 @@
+version: 3
+domain: Banking and Finance
+created_by: Team RHB
+seed_examples:
+  - context: |
+      ## Account information
+
+      | Fee name                | Fee details        |
+      |-------------------------|--------------------|
+      | Opening Deposit         | $100 or more       |
+      | Monthly Maintenance Fee | $12.00 each month. |
+
+      You can avoid the Monthly Maintenance Fee when you meet ONE of the following requirements during each statement cycle:
+      - Make at least one qualifying Direct Deposit of $250 or more to your account, OR
+      - Maintain a minimum daily balance of $1,500 or more in your account, OR
+      - Be a member of the Preferred Rewards program. Learn more at redhatbank.com/preferred-rewards.
+
+      ## ATM fees
+
+      | ATM Type                 | Fee details  | Usage details                                                |
+      |--------------------------|--------------|--------------------------------------------------------------|
+      | Red Hat Bank ATMs     | No ATM fee   | For deposits, withdrawals, transfers or balance inquiries    |
+      | Non-Red Hat Bank ATMs | $2.50        | In the U.S., plus any fee charged by the ATM's operator      |
+      |                          | $5.00        | Outside the U.S., plus any fee charged by the ATM's operator |
+
+    questions_and_answers:
+      - question: |
+          What are the ATM fees for the core checking account when using Red Hat Bank ATMs?
+        answer: |
+          There are no fees for the core checking account when using Red Hat Bank ATMs
+      - question: |
+          What is the opening deposit amount for the core checking account?
+        answer: |
+          The opening deposit amount for the core checking account is $100
+      - question: |
+          What is one way you avoid fees on a core checking account?
+        answer: |
+          You can avoid monthly fees by maintaining a minimum daily balance of $1,500 or more in your account.
+  - context: |
+      ## Overdraft policy
+
+      - To help you avoid fees, we won't authorize ATM withdrawals or everyday debit card purchases when you don't have enough money in your account at the time of the transaction.
+      - When we determine you don't have enough money in your account to cover other items such as checks or scheduled payments, we'll either authorize and pay the item and overdraw your account (an overdraft item), 1 or decline or return the item unpaid (a returned item). When this happens, you may be charged a fee. See details below.
+      - We offer two overdraft setting options for how you want us to process your other transactions.
+
+    questions_and_answers:
+      - question: |
+          Are there overdraft fees for the Red Hat Bank Core Checking account?
+        answer: |
+          Yes, there may be overdraft fees if a payment is authorized and you don't have enough money in your account to cover the items.
+      - question: |
+          Will ATM withdrawals be authorized if there isn't enough money in my account?
+        answer: |
+          No, these withdrawls will not be authorized
+      - question: |
+          Will a scheduled payment be authorized if there isn't enough money in my account?
+        answer: |
+          Scheduled payments will be either authorized or declined?
+  - context: |
+      ## Overdraft settings and fees
+
+      Option 1: Standard - This setting will be automatically applied to your account.
+
+      - Your checks and scheduled payments may be paid, causing an overdraft.
+      - You may be charged an Overdraft Item Fee if you overdraw your account.
+      - If we return an item unpaid, we won't charge a fee, but the payee may.
+
+      | Fee type                                                                    | Fee details     | Application details
+      |-----------------------------------------------------------------------------|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+      | Overdraft Item Fee (We won't charge you more than 2 of these fees per day.) | $10.00 per item | We won't charge this fee: If your account is overdrawn by $1 or less OR For items that are $1 or less OR On items that were authorized when your account had enough funds available OR On ACH resubmissions labeled by the merchant as "RETRY PYMT" or "REDEPCHECK" |
+    questions_and_answers:
+      - question: |
+          What is the default setting for Overdraft fees on Core Checking accounts?
+        answer: |
+          Option 1 is automatically applied to you account
+      - question: |
+          What is overdraft setting option 1?
+        answer: |
+          - Your checks and scheduled payments may be paid, causing an overdraft.
+          - You may be charged an Overdraft Item Fee if you overdraw your account.
+          - If we return an item unpaid, we won't charge a fee, but the payee may.
+      - question: |
+          What is the overdraft fee per item?
+        answer: |
+          The overdraft fee per item on the Core Checking account is $10
+  - context: |
+      Option 2: Decline All - You can choose this setting if you would like to have your transactions declined or returned unpaid when you don't have enough money. With this setting you can avoid Overdraft Item Fees.
+
+      - Checks or scheduled payments will be returned unpaid if you don't have enough money in your account.
+      - If your account becomes overdrawn for any reason, we won't charge you an Overdraft Item Fee.
+      - When we decline or return a transaction, we won't charge a fee, but the payee may.
+
+      Keep in mind, regardless of your overdraft setting, if you set up Balance Connect ® for overdraft protection, 2 we'll automatically transfer available funds from one or more of your linked backup accounts if you're about to overdraw your account.
+
+      Please see the Personal Schedule of Fees and Deposit Agreement and Disclosures for your account terms.
+
+      - 1. Our overdraft fee of $10 may apply for overdrafts created by check, recurring debit card transactions, or other electronic means. If your account is overdrawn, you must immediately bring your account to a positive balance. We pay overdrafts at our discretion and we reserve the right not to pay. For example, we typically do not pay overdrafts if your account is not in good standing.
+      - 2. Transfers from a linked (1) brokerage account enrolled in margin lending, (2) Loan Management Account ® , (3) credit card, or (4) line of credit and/or Home Equity Line of Credit are subject to interest charges and governed by the terms and conditions of the account.
+    questions_and_answers:
+      - question: |
+          Is there a overdraft item fee when option 2 is selected?
+        answer: |
+          No, if your account becomes overdrawn your will not be charged an overdraft item fee
+      - question: |
+          What is overdraft setting option 2?
+        answer: |
+          Overdraft setting option 2 will decline or return unpaid if you don't have enough money in your account
+          - Checks or scheduled payments will be returned unpaid if you don't have enough money in your account.
+          - If your account becomes overdrawn for any reason, we won't charge you an Overdraft Item Fee.
+          - When we decline or return a transaction, we won't charge a fee, but the payee may.
+      - question: |
+          Is there a fee charged if a transaction is declined?
+        answer: |
+          No, but the payee may charge a fee
+  - context: |
+      ## How we post transactions
+
+      The way we post transactions impacts your account balance. If there's not enough available money in your account to cover all of your transactions, the posting order can impact the number of overdraft fees you incur. At the end of each business day, we'll group transactions received that day into categories before posting them. Below are the most common categories, and common transaction types in each, in the order that they generally post to your account. Keep in mind that transactions that are still processing may lower your available balance.
+
+      - Deposits: Added from highest to lowest dollar amount.
+      - Many debit transactions: Subtracted based on the date and time you made them. If our system doesn't receive date and time of the transaction, they are posted and subtracted from highest to lowest dollar amount. These include one-time and recurring debit card transactions, one-time transfers, ATM withdrawals, and checks cashed with our tellers.
+      - Other checks you wrote: Subtracted in check number order, unless our system cannot detect the check number; then, the check transactions are posted and subtracted from highest to lowest dollar amount.
+      - Most other electronic payments and preauthorized transfers: Subtracted from highest to lowest dollar amount. These include scheduled transfers, online bill payments and preauthorized payments that use your account number.
+      - Most fees: Subtracted from highest to lowest dollar amounts.
+    questions_and_answers:
+      - question: |
+          What are the order of trasactions categories that can be posted to accounts?
+        answer: |
+          - Deposits
+          - Many debit transactions
+          - Other checks you wrote
+          - Most other electronic payments and preauthorized transfers
+          - Most fees
+      - question: |
+          Does the order transactions are posted impact the number of overdraft fees?
+        answer: |
+          Yes, the order may impact the number of overdraft fees.
+      - question: |
+          Do transactions that are still processing lower the available balance?
+        answer: |
+          Yes, transactions that are still processing may lower your available balance
+document_outline: Details of the Red Hat Bank Core Checking account
+document:
+  repo: 
+  commit: 
+  patterns:
+    - "source_docs/core_checking.md"
