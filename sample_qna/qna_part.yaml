@@ -102,7 +102,7 @@ seed_examples:
       TODO
 document_outline: Details of the Red Hat Bank Core Checking account
 document:
-  repo:
-  commit:
+  repo: https://github.com/mamurak/ilab-finance.git
+  commit: a605899b7ebe8605bededad6acad910c5fe418ba
   patterns:
     - "source_docs/core_checking.md"
